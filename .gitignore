@@ -1,0 +1,14 @@
+.project
+.settings
+.language-cache/
+.vscode/
+.idea/
+.fusebox/
+.tmp/
+.DS_Store
+out.js
+node_modules/
+sourcemaps.js.map
+dist/*
+build/*
+!build/index.html

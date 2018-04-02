@@ -1,0 +1,18 @@
+{
+  "name": "koa_ssr_apollo",
+  "version": "0.0.1",
+  "description": "React SSR demo based on Koa integrated with Apollo. All project build with fuse-box.",
+  "main": "src/server/index.js",
+  "repository": "https://github.com/LucasIcarus/koa_ssr_apollo.git",
+  "author": "fancy <lucasicarus@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.5.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "fuse-box": "^3.1.3",
+    "typescript": "^2.8.1"
+  }
+}
