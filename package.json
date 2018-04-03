@@ -7,9 +7,25 @@
   "author": "fancy <lucasicarus@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.12",
+    "apollo-client": "^2.2.8",
+    "apollo-link-http": "^1.5.3",
+    "apollo-link-schema": "^1.0.6",
+    "apollo-link-state": "^0.4.1",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
     "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-compress": "^2.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
+    "node-fetch": "^2.1.2",
+    "prop-types": "^15.6.1",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-apollo": "^2.1.2",
+    "react-dom": "^16.3.0",
+    "react-router-dom": "^4.2.2",
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
     "fuse-box": "^3.1.3",
