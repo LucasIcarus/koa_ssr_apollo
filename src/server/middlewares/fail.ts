@@ -1,9 +1,10 @@
 import * as debug from 'debug';
+import { Context } from 'koa';
 
 const log = debug('server:fail.js');
 
 export default function errorHandler(renderer: string) {
-  return async (ctx, next) => {
+  return async (ctx: Context, next: Function): Promise<void> => {
     try {
       await next();
       // TODO: 服务化接口异常信息收集
