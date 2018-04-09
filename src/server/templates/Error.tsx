@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export default () => (
+export const ErrorPage = () => (
   <html lang='en'>
     <head>
       <title>Error 500 - Man down!</title>
