@@ -5,11 +5,12 @@ import * as React from 'react';
 import { getDataFromTree, renderToStringWithData, ApolloProvider } from 'react-apollo';
 import { renderToString } from 'react-dom/server';
 import { matchPath, StaticRouter } from 'react-router-dom';
+
 // import { createHttpLink } from 'apollo-link-http';
 // import { SchemaLink } from 'apollo-link-schema';
 
 import { getRoutesConfig, makeRoutes } from '../../app/routes';
-import schema from '../../app/schema/schema';
+import schema from '../../app/schema/';
 
 // const GRAPHQL_ENDPOINT = process.env.GRAPHQL_ENDPOINT || '' // 'graphql';
 // const GRAPHQL_PORT = process.env.GRAPHQL_PORT || 3000;

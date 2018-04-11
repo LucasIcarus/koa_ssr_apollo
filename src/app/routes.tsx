@@ -1,4 +1,4 @@
-import debug from 'debug';
+import * as debug from 'debug';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 // import DocumentMeta from 'react-document-meta';
@@ -31,7 +31,7 @@ export const getRoutesConfig = () => [
 export const findRoute = (to) => getRoutesConfig().find((rt) => rt.name === to);
 
 // test this active link and route matching
-export const NamedLink = ({ className, to, children, ...props }) => {
+export const NamedLink: React.SFC<any> = ({ className, to, children, ...props }) => {
   const route = findRoute(to);
   if (!route) throw new Error(`Route to '${to}' not found`);
   return (
