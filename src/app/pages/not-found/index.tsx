@@ -1,11 +1,11 @@
-import debug from 'debug';
+import * as debug from 'debug';
 import * as React from 'react';
 
 import { bem } from '../../utils';
 
 import './style.sss';
 
-debug('pages:not-found');
+debug('app:NotFoundPage');
 const cx = bem({ block: 'not-found' });
 
 export const NotFound: React.SFC = () => (

@@ -5,7 +5,7 @@ import { renderToString } from 'react-dom/server';
 
 import { ErrorPage } from '../templates/Error';
 
-const log = debug('server:page-renderers');
+const log = debug('server:page-renderer');
 
 export default async (ctx, next) => {
   ctx.renderPageToString = (page) => `<!doctype html>${renderToString(page)}`;

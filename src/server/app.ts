@@ -8,7 +8,7 @@ import pageRenderers from './middlewares/page-renderers';
 import timer from './middlewares/timer';
 
 const app = new Koa();
-const log = debug('server:app.js');
+const log = debug('server:app');
 
 log('starting');
 
@@ -21,5 +21,5 @@ app.use((ctx) => {
   ctx.body = 'Hello Koa';
 });
 
-log('server is listening on port 8989');
-app.listen(8989);
+log('server is listening on port 4396');
+app.listen(4396);

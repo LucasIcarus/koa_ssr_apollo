@@ -1,4 +1,4 @@
-import debug from 'debug';
+import * as debug from 'debug';
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
@@ -7,7 +7,7 @@ import { bem } from '../../utils';
 import './style.sss';
 
 const cx = bem({ block: 'layout' });
-const log = debug('app-comp:Layout');
+const log = debug('app:Layout');
 
 export default class MainLayout extends React.Component {
   render() {

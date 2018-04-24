@@ -1,11 +1,11 @@
-import debug from 'debug';
+import * as debug from 'debug';
 import * as React from 'react';
 
 import { bem } from '../../utils';
 
 import './style.sss';
 
-debug('pages:about');
+debug('app:AboutPage');
 const cx = bem({ block: 'about' });
 
 export const About: React.SFC = () => (

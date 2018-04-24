@@ -4,8 +4,12 @@ import { Context } from 'koa';
 export default async (ctx: Context, next: Function) => {
   await next();
   if (ctx.body && ctx.response.status === 200) {
+    // http 1.1
     ctx.set('Cache-Control', 'no-cache, no-store, must-revalidate');
+
+    // http 1.0
     ctx.set('Pragma', 'no-cache');
+
     ctx.set('Expires', '0');
     if (typeof ctx.body === 'string') {
       ctx.set('Content-Length', String(ctx.body.length));

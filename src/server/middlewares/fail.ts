@@ -1,7 +1,7 @@
 import * as debug from 'debug';
 import { Context } from 'koa';
 
-const log = debug('server:fail.js');
+const log = debug('server:fail');
 
 export default function errorHandler(renderer: string) {
   return async (ctx: Context, next: Function): Promise<void> => {

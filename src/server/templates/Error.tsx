@@ -1,12 +1,12 @@
 import * as React from 'react';
 
 export const ErrorPage = () => (
-  <html lang='en'>
+  <html lang="en">
     <head>
       <title>Error 500 - Man down!</title>
     </head>
-    <body id='error-app'>
-      <div className='layout__main'>
+    <body id="error-app">
+      <div className="layout__main">
         <h1>Error 500</h1>
         <p>Man Down</p>
       </div>

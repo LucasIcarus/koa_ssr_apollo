@@ -1,11 +1,11 @@
 import * as debug from 'debug';
-import Router from 'koa-router';
-import koaStatic from 'koa-static';
+import * as Router from 'koa-router';
+import * as koaStatic from 'koa-static';
 
-import setRouterContext from './middleware/set-router-context';
-import renderApp from './middleware/render-app';
-import apiRouter from './api';
-import { DIST } from '../config/paths';
+// import apiRouter from './api';
+// import { DIST } from '../config/paths';
+// import renderApp from './middleware/render-app';
+// import setRouterContext from './middleware/set-router-context';
 
 const log = debug('server:router');
 export const router = new Router();
@@ -18,7 +18,6 @@ export function setRoutes(assets) {
 
   router
     .use(staticRoute)
-    .use(apiRouter.routes())
     .use(apiRouter.allowedMethods())
     .use(setRouterContext())
     .get('/(.*)', renderApp(assets));
