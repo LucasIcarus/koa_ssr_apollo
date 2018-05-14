@@ -15,12 +15,10 @@ fuse
   .instructions(" > [server/app.ts]")
   .completed(proc => proc.start());
 
-/*
 fuse
   .bundle("client/app")
-  .watch("client/**")
+  .watch("src/**")
   .hmr()
-  .instructions(" > client/index.ts");
-*/
+  .instructions(" > app/index.ts");
 
 fuse.run();
